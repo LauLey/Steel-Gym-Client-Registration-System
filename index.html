@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steel Gymn Client Registration System </title>
+    <title>Steel Gym Client Registration System</title>
 </head>
 <body>
     <header>
@@ -14,14 +14,19 @@
                 <legend>Datos Personales</legend>
                 <label for="nombre">Nombre(s):</label>
                 <input type="text" id="nombre" placeholder="Juan..." name="nombre">
+
                 <label for="primer_apellido">Primer Apellido:</label>
                 <input type="text" id="primer_apellido" placeholder="Pérez" name="primer_apellido">
+                
                 <label for="segundo_apellido">Segundo Apellido:</label>
+                <input type="text" id="segundo_apellido" placeholder="Pérez" name="segundo_apellido">
+
                 <label for="nacimiento">Fecha de nacimiento:</label>
                 <input type="date" id="nacimiento" name="nacimiento">
-                <input type="text" id="segundo_apellido" placeholder="Pérez" name="segundo_apellido">
+
                 <label for="edad">Edad:</label>
                 <input type="number" id="edad" name="edad" placeholder="35">
+
                 <div>
                     <label for="hombre">Hombre</label>
                     <input type="radio" id="hombre" name="sexo" value="hombre">
@@ -35,7 +40,7 @@
             <fieldset>
                 <legend>Datos de contacto</legend>
                 <label for="telefono">Número telefónico:</label>
-                <input type="number" id="telefono" name="telefono" placeholder="9511234567">
+                <input type="tel" id="telefono" name="telefono" placeholder="9511234567">
                 <label for="correo">Correo electrónico:</label>
                 <input type="email" id="correo" name="correo" placeholder="usuario@ejemplo.com">
             </fieldset>
@@ -61,97 +66,97 @@
                 <label for="contacto_emergencia_nombre">En caso de emergencia llamar a:</label>
                 <input type="text" id="contacto_emergencia_nombre" name="contacto_emergencia_nombre" placeholder="Nombre y apellido">
                 <label for="contacto_emergencia_telefono">Número de contacto:</label>
-                <input type="number" id="contacto_emergencia_telefono" name="contacto_emergencia_telefono" placeholder="9511234567">
+                <input type="tel" id="contacto_emergencia_telefono" name="contacto_emergencia_telefono" placeholder="9511234567">
             </fieldset>
 
             <fieldset>
                 <legend>Información médica</legend>
                 <h4>¿Padece alguna condición médica?</h4>
                 <div>
-                    <label for="si">Si</label>
-                    <input type="radio" id="si" name="condicion_medica" value="si">
+                    <label for="condicionmedica_si">Si</label>
+                    <input type="radio" id="condicionmedica_si" name="condicion_medica" value="si">
                 </div>
                 <div>
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="condicion_medica" value="no">
+                    <label for="condicionmedica_no">No</label>
+                    <input type="radio" id="condicionmedica_no" name="condicion_medica" value="no">
                 </div>
                 <h4>¿Está tomando algún medicamento?</h4>
                 <div>
-                    <label for="si">Si</label>
-                    <input type="radio" id="si" name="toma_medicamento" value="si">
+                    <label for="medicamento_si">Si</label>
+                    <input type="radio" id="medicamento_si" name="toma_medicamento" value="si">
                 </div>
                 <div>
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="toma_medicamento" value="no">
+                    <label for="medicamento_no">No</label>
+                    <input type="radio" id="medicamento_no" name="toma_medicamento" value="no">
                 </div>
                 <h4>Alergias</h4>
                 <div>
-                    <label for="si">Si</label>
-                    <input type="radio" id="si" name="alergias" value="si">
+                    <label for="alergias_si">Si</label>
+                    <input type="radio" id="alergias_si" name="alergias" value="si">
                 </div>
                 <div>
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="alergias" value="no">
+                    <label for="alergias_no">No</label>
+                    <input type="radio" id="alergias_no" name="alergias" value="no">
                 </div>
                 <h4>Lesiones</h4>
                 <div>
-                    <label for="si">Si</label>
-                    <input type="radio" id="si" name="lesiones" value="si">
+                    <label for="lesiones_si">Si</label>
+                    <input type="radio" id="lesiones_si" name="lesiones" value="si">
                 </div>
                 <div>
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="lesiones" value="no">
+                    <label for="lesiones_no">No</label>
+                    <input type="radio" id="lesiones_no" name="lesiones" value="no">
                 </div>
                 <h4>¿Padece alguna enfermedad cardiovascular?</h4>
                 <div>
-                    <label for="si">Si</label>
-                    <input type="radio" id="si" name="enfermedad_cardiovascular" value="si">
+                    <label for="enfermedad_si">Si</label>
+                    <input type="radio" id="enfermedad_si" name="enfermedad_cardiovascular" value="si">
                 </div>
                 <div>
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="enfermedad_cardiovascular" value="no">
+                    <label for="enfermedad_no">No</label>
+                    <input type="radio" id="enfermedad_no" name="enfermedad_cardiovascular" value="no">
                 </div>
                 <h4>¿Se asfixia con facilidad al hacer ejercicio?</h4>
                 <div>
-                    <label for="si">Si</label>
-                    <input type="radio" id="si" name="asfixia" value="si">
+                    <label for="si">asfixia_si</label>
+                    <input type="radio" id="asfixia_si" name="asfixia" value="si">
                 </div>
                 <div>
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="asfixia" value="no">
+                    <label for="no">asfixia_no</label>
+                    <input type="radio" id="asfixia_no" name="asfixia" value="no">
                 </div>
                 <h4>¿Padece algún tipo de adicción?</h4>
                 <div>
-                    <label for="si">Si</label>
-                    <input type="radio" id="si" name="adiccion" value="si">
+                    <label for="adiccion_si">Si</label>
+                    <input type="radio" id="adiccion_si" name="adiccion" value="si">
                 </div>
                 <div>
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="adiccion" value="no">
+                    <label for="no">adiccion_no</label>
+                    <input type="radio" id="adiccion_no" name="adiccion" value="no">
                 </div>
                 <h4>¿Ha tenido algún síntoma al realizar esfuerzos o ejercicio físico?</h4>
                 <div>
-                    <label for="si">Si</label>
-                    <input type="radio" id="si" name="sintomas" value="si">
+                    <label for="si">sintomas_si</label>
+                    <input type="radio" id="sintomas_si" name="sintomas" value="si">
                 </div>
                 <div>
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="sintomas" value="no">
+                    <label for="no">sintomas_no</label>
+                    <input type="radio" id="sintomas_no" name="sintomas" value="no">
                 </div>
                 <h4>¿Ha practicado o practica alguna actividad deportiva?</h4>
                 <div>
-                    <label for="si">Si</label>
-                    <input type="radio" id="si" name="actividad" value="si">
+                    <label for="actividad_si">Si</label>
+                    <input type="radio" id="actividad_si" name="actividad" value="si">
                 </div>
                 <div>
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="actividad" value="no">
+                    <label for="no">actividad_no</label>
+                    <input type="radio" id=""actividad_no" name="actividad" value="no">
                 </div>
             </fieldset>
 
             <fieldset>
                 <legend>Información que consideres relevante compartir con nosotros:</legend>
-                <textarea></textarea>
+                <textarea id="informacion_adicional" name="informacion_adicional" rows="5" placeholder="Escribe aquí cualquier información adicional..."></textarea>
             </fieldset>
 
         <div>

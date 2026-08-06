@@ -40,7 +40,10 @@
             <fieldset>
                 <legend>Datos de contacto</legend>
                 <label for="telefono">Número telefónico:</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="9511234567" required>
+                <input type="tel" id="telefono" name="telefono"
+                placeholder="9511234567" pattern="[0-9]{10}"
+                maxlength="10"
+                inputmode="numeric" required>
                 <label for="correo">Correo electrónico:</label>
                 <input type="email" id="correo" name="correo" placeholder="usuario@ejemplo.com">
             </fieldset>
@@ -66,7 +69,10 @@
                 <label for="contacto_emergencia_nombre">En caso de emergencia llamar a:</label>
                 <input type="text" id="contacto_emergencia_nombre" name="contacto_emergencia_nombre" placeholder="Nombre y apellido" required>
                 <label for="contacto_emergencia_telefono">Número de contacto:</label>
-                <input type="tel" id="contacto_emergencia_telefono" name="contacto_emergencia_telefono" placeholder="9511234567" required>
+                <input type="tel" id="contacto_emergencia_telefono"
+                name="contacto_emergencia_telefono" placeholder="9511234567"
+                pattern="[0-9]{10}" maxlength="10"
+                inputmode="numeric" required>
             </fieldset>
 
             <fieldset>

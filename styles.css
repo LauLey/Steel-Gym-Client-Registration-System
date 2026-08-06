@@ -1,0 +1,226 @@
+/* Estilos base (Mobile First) */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root{
+
+    --font-title:"Bebas Neue",sans-serif;
+    --font-text:"Montserrat",sans-serif;
+
+    --background:#f5f5f5;
+    --surface:#ffffff;
+
+    --primary:#FFD000;
+
+    --text:#111111;
+    --text-secondary:#555555;
+
+    --border:#D8D8D8;
+
+    --shadow:0 8px 18px rgba(0,0,0,.12);
+
+}
+
+[data-theme="dark"]{
+
+    --background:#111111;
+    --surface:#1d1d1d;
+
+    --primary:#FFD000;
+
+    --text:#ffffff;
+    --text-secondary:#cfcfcf;
+
+    --border:#404040;
+
+    --shadow:0 10px 20px rgba(0,0,0,.45);
+
+}
+
+*{
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    margin:0;
+    padding:0;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    font-family:var(--font-text);
+
+}
+
+header{
+
+    width:100%;
+
+    padding:2rem;
+
+    text-align:center;
+
+    background:var(--surface);
+
+    box-shadow:var(--shadow);
+
+}
+
+.steel{
+
+    font-family:var(--font-title);
+
+    font-size:3rem;
+
+    letter-spacing:.18rem;
+
+    color:var(--primary);
+
+}
+
+form{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:2rem auto;
+
+}
+
+fieldset{
+
+    margin-bottom:2rem;
+
+    padding:2rem;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    background:var(--surface);
+
+    box-shadow:var(--shadow);
+
+}
+
+legend{
+
+    padding:0 .5rem;
+
+    font-family:var(--font-title);
+
+    font-size:2rem;
+
+    color:var(--primary);
+
+    letter-spacing:.08rem;
+
+}
+
+label{
+
+    color:var(--text);
+
+    font-weight:600;
+
+}
+
+input{
+
+    width:100%;
+
+    margin-top:.4rem;
+
+    margin-bottom:1rem;
+
+    padding:.8rem;
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    background:var(--surface);
+
+    color:var(--text);
+
+    font-family:var(--font-text);
+
+    font-size:1rem;
+
+}
+
+textarea{
+
+    width:100%;
+
+    padding:1rem;
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    background:var(--surface);
+
+    color:var(--text);
+
+    font-family:var(--font-text);
+
+    font-size:1rem;
+
+}
+
+h4{
+
+    margin-top:2rem;
+
+    margin-bottom:1rem;
+
+    font-family:var(--font-title);
+
+    font-size:1.4rem;
+
+    letter-spacing:.04rem;
+
+    color:var(--text);
+
+}
+
+button{
+
+    width:90%;
+
+    max-width:900px;
+
+    padding:1rem;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:var(--primary);
+
+    color:#111111;
+
+    font-family:var(--font-title);
+
+    font-size:1.6rem;
+
+    letter-spacing:.05rem;
+
+}
+
+footer{
+
+    margin:3rem 0 2rem;
+
+    text-align:center;
+
+    color:var(--text-secondary);
+
+    font-size:.9rem;
+
+}

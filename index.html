@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steel Gym Client Registration System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -55,7 +59,7 @@
                 <label for="domicilio_numeroext">Número Exterior:</label>
                 <input type="number" id="domicilio_numeroext" name="domicilio_numeroext" placeholder="111" required>
                 <label for="domicilio_numeroint">Número interior:</label>
-                <input type="text" id="domicilio_numeroint" name="domicilio_numeroint" placeholder="Ejemplo: Dpto 6" required>
+                <input type="text" id="domicilio_numeroint" name="domicilio_numeroint" placeholder="Ejemplo: Dpto 6">
                 <label for="domicilio_colonia">Colonia:</label>
                 <input type="text" id="domicilio_colonia" name="domicilio_colonia" placeholder="Colonia Centro" required>
                 <label for="domicilio_municipio">Municipio:</label>
@@ -124,11 +128,11 @@
                 </div>
                 <h4>¿Se asfixia con facilidad al hacer ejercicio?</h4>
                 <div>
-                    <label for="si">asfixia_si</label>
+                    <label for="asfixia_si">Si</label>
                     <input type="radio" id="asfixia_si" name="asfixia" value="si" required>
                 </div>
                 <div>
-                    <label for="no">asfixia_no</label>
+                    <label for="asfixia_no">No</label>
                     <input type="radio" id="asfixia_no" name="asfixia" value="no">
                 </div>
                 <h4>¿Padece algún tipo de adicción?</h4>
@@ -137,16 +141,16 @@
                     <input type="radio" id="adiccion_si" name="adiccion" value="si" required>
                 </div>
                 <div>
-                    <label for="no">adiccion_no</label>
+                    <label for="adiccion_no">No</label>
                     <input type="radio" id="adiccion_no" name="adiccion" value="no">
                 </div>
                 <h4>¿Ha tenido algún síntoma al realizar esfuerzos o ejercicio físico?</h4>
                 <div>
-                    <label for="si">sintomas_si</label>
+                    <label for="sintomas_si">Si</label>
                     <input type="radio" id="sintomas_si" name="sintomas" value="si" required>
                 </div>
                 <div>
-                    <label for="no">sintomas_no</label>
+                    <label for="sintomas_no">No</label>
                     <input type="radio" id="sintomas_no" name="sintomas" value="no">
                 </div>
                 <h4>¿Ha practicado o practica alguna actividad deportiva?</h4>
@@ -155,8 +159,8 @@
                     <input type="radio" id="actividad_si" name="actividad" value="si" required>
                 </div>
                 <div>
-                    <label for="no">actividad_no</label>
-                    <input type="radio" id=""actividad_no" name="actividad" value="no">
+                    <label for="actividad_no">No</label>
+                    <input type="radio" id="actividad_no" name="actividad" value="no">
                 </div>
             </fieldset>
 

@@ -43,28 +43,18 @@
 }
 
 body{
-
     margin:0;
     padding:0;
-
     background:var(--background);
-
     color:var(--text);
-
     font-family:var(--font-text);
-
 }
 
 header{
-
     width:100%;
-
     padding:2rem;
-
     text-align:center;
-
     background:var(--surface);
-
     box-shadow:var(--shadow);
 
 }

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steel Gymn Client Registration System </title>
+</head>
+<body>
+    <header>
+        <div class="steel">SteelGym</div>
+    </header>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre(s):</label>
+                <input type="text" id="nombre" placeholder="Juan..." name="nombre">
+                <label for="primer_apellido">Primer Apellido:</label>
+                <input type="text" id="primer_apellido" placeholder="Pérez" name="primer_apellido">
+                <label for="segundo_apellido">Segundo Apellido:</label>
+                <label for="nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="nacimiento" name="nacimiento">
+                <input type="text" id="segundo_apellido" placeholder="Pérez" name="segundo_apellido">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" placeholder="35">
+                <div>
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="hombre" name="sexo" value="hombre">
+                </div>
+                <div>
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" id="mujer" name="sexo" value="mujer">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <label for="telefono">Número telefónico:</label>
+                <input type="number" id="telefono" name="telefono" placeholder="9511234567">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="usuario@ejemplo.com">
+            </fieldset>
+
+            <fieldset>
+                <legend>Domicilio</legend>
+                <label for="domicilio_calle">Calle:</label>
+                <input type="text" id="domicilio_calle" name="domicilio_calle" placeholder="Camino Nacional">
+                <label for="domicilio_numeroext">Número Exterior:</label>
+                <input type="number" id="domicilio_numeroext" name="domicilio_numeroext" placeholder="111">
+                <label for="domicilio_numeroint">Número interior:</label>
+                <input type="text" id="domicilio_numeroint" name="domicilio_numeroint" placeholder="Ejemplo: Dpto 6">
+                <label for="domicilio_colonia">Colonia:</label>
+                <input type="text" id="domicilio_colonia" name="domicilio_colonia" placeholder="Colonia Centro">
+                <label for="domicilio_municipio">Municipio:</label>
+                <input type="text" id="domicilio_municipio" name="domicilio_municipio" placeholder="Tlalixtac de Cabrera">
+                <label for="domicilio_cp">Código Postal:</label>
+                <input type="number" id="domicilio_cp" name="domicilio_cp" placeholder="68270">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto de emergencia:</legend>
+                <label for="contacto_emergencia_nombre">En caso de emergencia llamar a:</label>
+                <input type="text" id="contacto_emergencia_nombre" name="contacto_emergencia_nombre" placeholder="Nombre y apellido">
+                <label for="contacto_emergencia_telefono">Número de contacto:</label>
+                <input type="number" id="contacto_emergencia_telefono" name="contacto_emergencia_telefono" placeholder="9511234567">
+            </fieldset>
+
+            <fieldset>
+                <legend>Información médica</legend>
+                <h4>¿Padece alguna condición médica?</h4>
+                <div>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="condicion_medica" value="si">
+                </div>
+                <div>
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="condicion_medica" value="no">
+                </div>
+                <h4>¿Está tomando algún medicamento?</h4>
+                <div>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="toma_medicamento" value="si">
+                </div>
+                <div>
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="toma_medicamento" value="no">
+                </div>
+                <h4>Alergias</h4>
+                <div>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="alergias" value="si">
+                </div>
+                <div>
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="alergias" value="no">
+                </div>
+                <h4>Lesiones</h4>
+                <div>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="lesiones" value="si">
+                </div>
+                <div>
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="lesiones" value="no">
+                </div>
+                <h4>¿Padece alguna enfermedad cardiovascular?</h4>
+                <div>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="enfermedad_cardiovascular" value="si">
+                </div>
+                <div>
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="enfermedad_cardiovascular" value="no">
+                </div>
+                <h4>¿Se asfixia con facilidad al hacer ejercicio?</h4>
+                <div>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="asfixia" value="si">
+                </div>
+                <div>
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="asfixia" value="no">
+                </div>
+                <h4>¿Padece algún tipo de adicción?</h4>
+                <div>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="adiccion" value="si">
+                </div>
+                <div>
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="adiccion" value="no">
+                </div>
+                <h4>¿Ha tenido algún síntoma al realizar esfuerzos o ejercicio físico?</h4>
+                <div>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="sintomas" value="si">
+                </div>
+                <div>
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="sintomas" value="no">
+                </div>
+                <h4>¿Ha practicado o practica alguna actividad deportiva?</h4>
+                <div>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="actividad" value="si">
+                </div>
+                <div>
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="actividad" value="no">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información que consideres relevante compartir con nosotros:</legend>
+                <textarea></textarea>
+            </fieldset>
+
+        <div>
+            <label for="confirmacion">Confirmo que los datos proporcionados son correctos</label>
+            <input type="checkbox" id="confirmacion" name="confirmacion">
+        </div>
+        <button type="submit">Enviar solicitud de inscripción</button>
+
+    </form>
+    <footer>© 2026 Laura Leyva - Formulario de registro SteelGym</footer>
+</body>
+</html>

@@ -15,8 +15,12 @@
     --text-secondary:#555555;
 
     --border:#D8D8D8;
+    --border-focus:#FFD000;
+    --error:#D93025;
+    --success: #2E7D32;
 
     --shadow:0 8px 18px rgba(0,0,0,.12);
+    --shadow-focus:0 0 8px rgba(255,208,0,.35);
 
 }
 
@@ -56,161 +60,114 @@ header{
     text-align:center;
     background:var(--surface);
     box-shadow:var(--shadow);
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.steel{
+.logo-icon{
+    width:80px;
+    height:auto;
+}
 
-    font-family:var(--font-title);
-
-    font-size:3rem;
-
-    letter-spacing:.18rem;
-
-    color:var(--primary);
-
+.logo-text{
+    width:220px;
+    height:auto;
 }
 
 form{
-
     width:90%;
-
     max-width:900px;
-
     margin:2rem auto;
-
 }
 
 fieldset{
-
     margin-bottom:2rem;
-
     padding:2rem;
-
     border:1px solid var(--border);
-
     border-radius:12px;
-
     background:var(--surface);
-
     box-shadow:var(--shadow);
 
 }
 
 legend{
-
     padding:0 .5rem;
-
     font-family:var(--font-title);
-
     font-size:2rem;
-
     color:var(--primary);
-
     letter-spacing:.08rem;
-
+    text-align: center;
 }
 
 label{
-
     color:var(--text);
-
     font-weight:600;
-
 }
 
 input{
-
     width:100%;
-
     margin-top:.4rem;
-
     margin-bottom:1rem;
-
     padding:.8rem;
-
     border:1px solid var(--border);
-
     border-radius:8px;
-
     background:var(--surface);
-
     color:var(--text);
-
     font-family:var(--font-text);
-
     font-size:1rem;
+}
 
+input:focus {
+    border: solid 2px var(--border-focus);
+    outline: none;
+    box-shadow: 
+}
+
+input:user-valid {
+    border: solid 2px var(--shadow-focus);
+}
+
+input:user-invalid {
+    border: solid 2px var(--error);
 }
 
 textarea{
-
     width:100%;
-
     padding:1rem;
-
     border:1px solid var(--border);
-
     border-radius:8px;
-
     background:var(--surface);
-
     color:var(--text);
-
     font-family:var(--font-text);
-
     font-size:1rem;
-
 }
 
 h4{
-
     margin-top:2rem;
-
     margin-bottom:1rem;
-
     font-family:var(--font-title);
-
     font-size:1.4rem;
-
     letter-spacing:.04rem;
-
     color:var(--text);
-
 }
 
 button{
-
     width:90%;
-
     max-width:900px;
-
     padding:1rem;
-
     border:none;
-
     border-radius:10px;
-
     background:var(--primary);
-
     color:#111111;
-
     font-family:var(--font-title);
-
     font-size:1.6rem;
-
     letter-spacing:.05rem;
-
 }
 
 footer{
-
     margin:3rem 0 2rem;
-
     text-align:center;
-
     color:var(--text-secondary);
-
     font-size:.9rem;
-
 }

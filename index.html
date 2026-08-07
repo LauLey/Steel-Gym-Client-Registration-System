@@ -11,7 +11,14 @@
 </head>
 <body>
     <header>
-        <div class="steel">SteelGym</div>
+    <img
+        src="./assets/images/SVG Logo.svg"
+        alt="Steel Gym"
+        class="logo-icon">
+    <img
+        src="./assets/images/SVG STEEL GYM.svg"
+        alt="Steel Gym"
+        class="logo-text">
     </header>
         <form action="#" method="post">
             <fieldset>
@@ -23,7 +30,7 @@
                 <input type="text" id="primer_apellido" placeholder="Pérez" name="primer_apellido" required>
                 
                 <label for="segundo_apellido">Segundo Apellido:</label>
-                <input type="text" id="segundo_apellido" placeholder="Pérez" name="segundo_apellido">
+                <input type="text" id="segundo_apellido" placeholder="López" name="segundo_apellido">
 
                 <label for="nacimiento">Fecha de nacimiento:</label>
                 <input type="date" id="nacimiento" name="nacimiento" required>
@@ -57,7 +64,7 @@
                 <label for="domicilio_calle">Calle:</label>
                 <input type="text" id="domicilio_calle" name="domicilio_calle" placeholder="Camino Nacional" required>
                 <label for="domicilio_numeroext">Número Exterior:</label>
-                <input type="number" id="domicilio_numeroext" name="domicilio_numeroext" placeholder="111" required>
+                <input type="text" id="domicilio_numeroext" name="domicilio_numeroext" placeholder="111" required>
                 <label for="domicilio_numeroint">Número interior:</label>
                 <input type="text" id="domicilio_numeroint" name="domicilio_numeroint" placeholder="Ejemplo: Dpto 6">
                 <label for="domicilio_colonia">Colonia:</label>
@@ -65,7 +72,7 @@
                 <label for="domicilio_municipio">Municipio:</label>
                 <input type="text" id="domicilio_municipio" name="domicilio_municipio" placeholder="Tlalixtac de Cabrera" required>
                 <label for="domicilio_cp">Código Postal:</label>
-                <input type="number" id="domicilio_cp" name="domicilio_cp" placeholder="68270" required>
+                <input type="text" id="domicilio_cp" name="domicilio_cp" placeholder="68270" pattern="[0-9]{5}" inputmode="numeric" required>
             </fieldset>
 
             <fieldset>

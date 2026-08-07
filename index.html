@@ -23,19 +23,19 @@
         <form action="#" method="post">
             <fieldset>
                 <legend>Datos Personales</legend>
-                <label for="nombre">Nombre(s):</label>
+                <label class="required" for="nombre">Nombre(s):</label>
                 <input type="text" id="nombre" placeholder="Juan..." name="nombre" required>
 
-                <label for="primer_apellido">Primer Apellido:</label>
+                <label class="required" for="primer_apellido">Primer Apellido:</label>
                 <input type="text" id="primer_apellido" placeholder="Pérez" name="primer_apellido" required>
                 
                 <label for="segundo_apellido">Segundo Apellido:</label>
                 <input type="text" id="segundo_apellido" placeholder="López" name="segundo_apellido">
 
-                <label for="nacimiento">Fecha de nacimiento:</label>
+                <label class="required" for="nacimiento">Fecha de nacimiento:</label>
                 <input type="date" id="nacimiento" name="nacimiento" required>
 
-                <label for="edad">Edad:</label>
+                <label class="required" for="edad">Edad:</label>
                 <input type="number" id="edad" name="edad" placeholder="35" required>
 
                 <div>
@@ -61,25 +61,25 @@
 
             <fieldset>
                 <legend>Domicilio</legend>
-                <label for="domicilio_calle">Calle:</label>
+                <label class="required" for="domicilio_calle">Calle:</label>
                 <input type="text" id="domicilio_calle" name="domicilio_calle" placeholder="Camino Nacional" required>
-                <label for="domicilio_numeroext">Número Exterior:</label>
+                <label class="required" for="domicilio_numeroext">Número Exterior:</label>
                 <input type="text" id="domicilio_numeroext" name="domicilio_numeroext" placeholder="111" required>
                 <label for="domicilio_numeroint">Número interior:</label>
                 <input type="text" id="domicilio_numeroint" name="domicilio_numeroint" placeholder="Ejemplo: Dpto 6">
-                <label for="domicilio_colonia">Colonia:</label>
+                <label class="required" for="domicilio_colonia">Colonia:</label>
                 <input type="text" id="domicilio_colonia" name="domicilio_colonia" placeholder="Colonia Centro" required>
-                <label for="domicilio_municipio">Municipio:</label>
+                <label class="required" for="domicilio_municipio">Municipio:</label>
                 <input type="text" id="domicilio_municipio" name="domicilio_municipio" placeholder="Tlalixtac de Cabrera" required>
-                <label for="domicilio_cp">Código Postal:</label>
+                <label class="required" for="domicilio_cp">Código Postal:</label>
                 <input type="text" id="domicilio_cp" name="domicilio_cp" placeholder="68270" pattern="[0-9]{5}" inputmode="numeric" required>
             </fieldset>
 
             <fieldset>
                 <legend>Contacto de emergencia</legend>
-                <label for="contacto_emergencia_nombre">En caso de emergencia llamar a:</label>
+                <label class="required" for="contacto_emergencia_nombre">En caso de emergencia llamar a:</label>
                 <input type="text" id="contacto_emergencia_nombre" name="contacto_emergencia_nombre" placeholder="Nombre y apellido" required>
-                <label for="contacto_emergencia_telefono">Número de contacto:</label>
+                <label class="required" for="contacto_emergencia_telefono">Número de contacto:</label>
                 <input type="tel" id="contacto_emergencia_telefono"
                 name="contacto_emergencia_telefono" placeholder="9511234567"
                 pattern="[0-9]{10}" maxlength="10"
@@ -88,7 +88,7 @@
 
             <fieldset>
                 <legend>Información médica</legend>
-                <h4>¿Padece alguna condición médica?</h4>
+                <h4 class="required">¿Padece alguna condición médica?</h4>
                 <div>
                     <label for="condicionmedica_si">Si</label>
                     <input type="radio" id="condicionmedica_si" name="condicion_medica" value="si" required>
@@ -97,7 +97,7 @@
                     <label for="condicionmedica_no">No</label>
                     <input type="radio" id="condicionmedica_no" name="condicion_medica" value="no">
                 </div>
-                <h4>¿Está tomando algún medicamento?</h4>
+                <h4 class="required">¿Está tomando algún medicamento?</h4>
                 <div>
                     <label for="medicamento_si">Si</label>
                     <input type="radio" id="medicamento_si" name="toma_medicamento" value="si" required>
@@ -106,7 +106,7 @@
                     <label for="medicamento_no">No</label>
                     <input type="radio" id="medicamento_no" name="toma_medicamento" value="no">
                 </div>
-                <h4>Alergias</h4>
+                <h4 class="required">Alergias</h4>
                 <div>
                     <label for="alergias_si">Si</label>
                     <input type="radio" id="alergias_si" name="alergias" value="si" required>
@@ -115,7 +115,7 @@
                     <label for="alergias_no">No</label>
                     <input type="radio" id="alergias_no" name="alergias" value="no">
                 </div>
-                <h4>Lesiones</h4>
+                <h4 class="required">Lesiones</h4>
                 <div>
                     <label for="lesiones_si">Si</label>
                     <input type="radio" id="lesiones_si" name="lesiones" value="si" required>
@@ -124,7 +124,7 @@
                     <label for="lesiones_no">No</label>
                     <input type="radio" id="lesiones_no" name="lesiones" value="no">
                 </div>
-                <h4>¿Padece alguna enfermedad cardiovascular?</h4>
+                <h4 class="required">¿Padece alguna enfermedad cardiovascular?</h4>
                 <div>
                     <label for="enfermedad_si">Si</label>
                     <input type="radio" id="enfermedad_si" name="enfermedad_cardiovascular" value="si" required>
@@ -133,7 +133,7 @@
                     <label for="enfermedad_no">No</label>
                     <input type="radio" id="enfermedad_no" name="enfermedad_cardiovascular" value="no">
                 </div>
-                <h4>¿Se asfixia con facilidad al hacer ejercicio?</h4>
+                <h4 class="required">¿Se asfixia con facilidad al hacer ejercicio?</h4>
                 <div>
                     <label for="asfixia_si">Si</label>
                     <input type="radio" id="asfixia_si" name="asfixia" value="si" required>
@@ -142,7 +142,7 @@
                     <label for="asfixia_no">No</label>
                     <input type="radio" id="asfixia_no" name="asfixia" value="no">
                 </div>
-                <h4>¿Padece algún tipo de adicción?</h4>
+                <h4 class="required">¿Padece algún tipo de adicción?</h4>
                 <div>
                     <label for="adiccion_si">Si</label>
                     <input type="radio" id="adiccion_si" name="adiccion" value="si" required>
@@ -151,7 +151,7 @@
                     <label for="adiccion_no">No</label>
                     <input type="radio" id="adiccion_no" name="adiccion" value="no">
                 </div>
-                <h4>¿Ha tenido algún síntoma al realizar esfuerzos o ejercicio físico?</h4>
+                <h4 class="required">¿Ha tenido algún síntoma al realizar esfuerzos o ejercicio físico?</h4>
                 <div>
                     <label for="sintomas_si">Si</label>
                     <input type="radio" id="sintomas_si" name="sintomas" value="si" required>
@@ -160,7 +160,7 @@
                     <label for="sintomas_no">No</label>
                     <input type="radio" id="sintomas_no" name="sintomas" value="no">
                 </div>
-                <h4>¿Ha practicado o practica alguna actividad deportiva?</h4>
+                <h4 class="required">¿Ha practicado o practica alguna actividad deportiva?</h4>
                 <div>
                     <label for="actividad_si">Si</label>
                     <input type="radio" id="actividad_si" name="actividad" value="si" required>
@@ -177,8 +177,8 @@
             </fieldset>
 
         <div>
-            <label for="confirmacion">Confirmo que los datos proporcionados son correctos</label>
-            <input type="checkbox" id="confirmacion" name="confirmacion">
+            <label class="required" for="confirmacion">Confirmo que los datos proporcionados son correctos</label>
+            <input type="checkbox" id="confirmacion" name="confirmacion" required>
         </div>
         <button type="submit">Enviar solicitud de inscripción</button>
 
